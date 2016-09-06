@@ -1,14 +1,67 @@
+//load gallery
 
-//image load and swap functions
-function swapImg(link, imgDiv, imgSrc, default) {
-    $(link).on('mouseenter', function(){
-        $(imgDiv).attr('src') = imgSrc;
-    })
-    $(link).on('mouseleave', function(){
-        $(imgDiv).attr('src') = default;
-    })
-}
+$(document).ready(function(){
+    var lithoGal = [{src:'Aransas_I&2', caption: ['Aransas I & II','Hand colored Linocut','12&quot; x 9&quot;']},
+                    {src: 'Cliff SwallowsI',caption: ['Cliff Swallows I','Lithograph 11','1/2&quot; x 16&quot;']},
+                    {src:'Arbor Vitae', caption: ['Arbor Vitae', 'Hand colored linoleum cut', '44 1/4&quot x 56&quot']},
+                    {src:'barnswallows1', caption: ['Barn Swallow I', 'Hand colored linocut', '9&quot x 6&quot']},
+                    {src:'barnswallows2', caption: ['Barn Swallow II', 'Hand colored linocut', '9&quot x 6&quot']},
+                    {src:'batscongressavebridge', caption:['Bats & Congress Avenue Bridge', 'Hand colored Lithograph', '11 1/4&quot x 11 9/16&quot']},
+                    {src:'beltedkingfisher', caption:['Belted Kingfisher', 'Hand colored linocut', '9&quot; x 9&quot;']},
+                    {src:'carpcabomba', caption:['Carp & Cabomba', 'Silkscreen', '18&quot x 14&quot']},
+                    {src: 'Cliff SwallowsII', caption:['Cliff Swallows II', 'Hand colored Lithograph', '11 1/2” x 16&quot']},
+                    {src:'cottontops', caption:['Cotton-Tops', 'Hand colored Linocut', '8 3/16&quot x 8 3/16&quot']},
+                    {src:'Dawn', caption:['Dawn', 'Hand colored Linocut collage on gilded paper', '30&quot x 32&quot']},
+                    {src:'Daybreak1', caption:['Daybreak I', 'Linocut', '15&quot x 35&quot']},
+                    {src:'DaybreakII', caption:['Daybreak II', 'Hand colored Linocut', '15&quot x 35&quot']},
+                    {src:'earlyspringbasin', caption:['Early Spring in the Basin', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'edge of the world', caption:['Edge of the World', 'Hand colored linocut', '24&quot x 36&quot']},
+                    {src:'FlockRWBB copy', caption:['Small Flock', 'Hand colored Linocut collage on gilded paper', '22&quot x 13 1/2&quot']},
+                    {src:'Gallo Pinto', caption:['El Gallo Pintado', 'Hand colored lithograph', '18&quot; x 14&quot;']},
+                    {src:'greentreefrogday', caption:['Green Treefrog: Daytime', 'Hand colored Linocut', '4&quot; x 4&quot;']},
+                    {src:'greentreefrognight', caption:['Green Treefrog: Nighttime', 'Hand colored Linocut', '4&quot; x 4&quot;']},
+                    {src:'Helianthus and Heron', caption:['Helianthus & Heron', 'Hand colored linoleum cut', '44 1/4&quot x 30&quot']},
+                    {src:'Montezuma_Quail', caption:['Montezuma Quail', 'Hand colored linoleum cut', '5&quot; x 5&quot;']},
+                    {src:'Narcissus', caption:['Narcissus', 'Lithograph', '15 1/2&quot x 11 1/2&quot']},
+                    {src:'newworld', caption:['New World', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'Nightshade', caption:['Nightshade', 'Lithograph', '15 1/2&quot x 11 1/2&quot']},
+                    {src:'oilwater', caption:['Oil and Water', 'Lithograph', '8&quot; x 11&quot;']},
+                    {src:'Optunia and Caracara', caption:['Opuntia & Caracara', 'Hand colored linoleum cut', '44 1/4&quot x 30&quot']},
+                    {src:'PegasusRising', caption:['Pegasus Rising (litho)', 'Lithograph', '11 7/8&quot; x 16 7/78&quot;']},
+                    {src:'renegade', caption:['Renegade II', 'Renegade II', '9.25&quot x 14.5&quot']},
+                    {src:'reservedBeauty', caption:['Reserved Beauty', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'riverdocknight', caption:['River Dock at Night', 'Hand colored Lithograph', '3 1/4&quot x 4 1/2&quot']},
+                    {src:'riverrevealed', caption:['River Revealed', 'Hand-colored Lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'shadowofbuchanandam', caption:['In the Shadow of Buchanan Dam', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'soloRWBB', caption:['Solo', 'Hand colored Linocut collage on gilded paper', '10 3/4&quot x 11&quot']},
+                    {src:'songsparrow1', caption:['Song Sparrow I', 'Color Lithograph', '5&quot x 6&quot']},
+                    {src:'spottedgar', caption:['Spotted Gar', 'Hand colored linocut', '7 1/2&quot; x 26 1/2&quot;']},
+                    {src:'Summer Garden', caption:['Summer Garden', 'Hand colored Linocut', '18&quot x 24&quot']},
+                    {src:'summerriver', caption:['Summer River', 'Hand-colored Lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'ricebowl', caption:['Rice Bowl', 'Hand colored Linocut', '5 13/16&quot x 25 7/8&quot']},
+                    {src:'Wingbeats', caption:['Wingbeats', 'Hand colored Linocut collage on gilded paper', '26&quot x 8 1/2&quot']},
+                    {src:'', caption:[]}];
 
+    loadGallery('litho-gal', lithoGal);
+
+    function loadGallery(pageId, links) {
+        if ($('#' + pageId).length > 0) {
+            var gallery = $('#' +pageId).find('.img-gallery');
+            links.forEach(function(link){
+                var figure = $('<a  class="img-caption-bundle" href="' + link.src + '.jpg" data-lightbox="' + link.src + '"data-title="' + link.caption[0] + '"><figure></figure></a>');
+                figure.append('<img src="' + link.src + '.jpg">');
+
+                link.caption.forEach(function(line){
+                    figure.append('<p class="img-caption">' + line + '<p>');
+                })
+                gallery.append(figure);
+            }); 
+        }
+    }
+
+
+});
+//image load and swap functions from orig code
 function preloadImages() {
     if (document.images) {
        var imgFiles = preloadImages.arguments;
