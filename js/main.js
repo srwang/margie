@@ -48,7 +48,7 @@ $(document).ready(function(){
         if ($('#' + pageId).length > 0) {
             var gallery = $('#' +pageId).find('.img-gallery');
             links.forEach(function(link){
-                var figure = $('<a  class="img-caption-bundle" href="' + link.src + '.jpg" data-lightbox="' + link.src + '"data-title="' + link.caption[0] + '"><figure></figure></a>');
+                var figure = $('<a  class="img-caption-bundle" href="' + link.src + '.jpg" data-lightbox="litho-gal" data-title="' + link.caption[0] + '"><figure></figure></a>');
                 figure.append('<img src="' + link.src + '.jpg">');
 
                 link.caption.forEach(function(line){
