@@ -22,15 +22,18 @@ body {
 .img-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 120px 100px 0px 100px; }
 
 .img-caption-bundle {
-  display: inline-block;
-  width: 250px;
-  padding: 15px 25px; }
-  .img-caption-bundle img {
-    max-width: 100%;
-    margin-bottom: 20px; }
+  margin: 10px 2px; }
+  .img-caption-bundle .img-thumb {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px; }
   .img-caption-bundle .img-caption {
     margin-top: -10px;
     text-align: center;
@@ -44,7 +47,7 @@ body {
   visibility: hidden; }
 
 .lb-image {
-  max-height: 90vh !important;
+  max-height: 80vh !important;
   width: auto !important; }
 
 .lb-caption {
