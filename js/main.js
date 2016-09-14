@@ -13,8 +13,6 @@ $(document).ready(function(){
                     {src: 'Cliff SwallowsII', caption:['Cliff Swallows II', 'Hand colored Lithograph', '11 1/2&quot x 16&quot']},
                     {src:'cottontops', caption:['Cotton-Tops', 'Hand colored Linocut', '8 3/16&quot x 8 3/16&quot']},
                     {src:'Dawn', caption:['Dawn', 'Hand colored Linocut collage on gilded paper', '30&quot x 32&quot']},
-                    {src:'Daybreak1', caption:['Daybreak I', 'Linocut', '15&quot x 35&quot']},
-                    {src:'DaybreakII', caption:['Daybreak II', 'Hand colored Linocut', '15&quot x 35&quot']},
                     {src:'01 EarlySpring-copy', caption:['Early Spring in the Basin', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
                     {src:'edge of the world', caption:['Edge of the World', 'Hand colored linocut', '24&quot x 36&quot']},
                     {src:'FlockRWBB copy', caption:['Small Flock', 'Hand colored Linocut collage on gilded paper', '22&quot x 13 1/2&quot']},
@@ -36,9 +34,11 @@ $(document).ready(function(){
                     {src:'04_Buchanan Dam', caption:['In the Shadow of Buchanan Dam', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
                     {src:'soloRWBB', caption:['Solo', 'Hand colored Linocut collage on gilded paper', '10 3/4&quot x 11&quot']},
                     {src:'songsparrow1', caption:['Song Sparrow I', 'Color Lithograph', '5&quot x 6&quot']},
-                    {src:'Spotted Gar copy', caption:['Spotted Gar', 'Hand colored linocut', '7 1/2&quot; x 26 1/2&quot;']},
                     {src:'Summer Garden', caption:['Summer Garden', 'Hand colored Linocut', '18&quot x 24&quot']},
                     {src:'05_SummerRiver-copy', caption:['Summer River', 'Hand-colored Lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'Daybreak1', caption:['Daybreak I', 'Linocut', '15&quot x 35&quot']},
+                    {src:'DaybreakII', caption:['Daybreak II', 'Hand colored Linocut', '15&quot x 35&quot']},
+                    {src:'Spotted Gar copy', caption:['Spotted Gar', 'Hand colored linocut', '7 1/2&quot; x 26 1/2&quot;']},
                     {src:'Rice Bowl copy', caption:['Rice Bowl', 'Hand colored Linocut', '5 13/16&quot x 25 7/8&quot']},
                     {src:'Wingbeats', caption:['Wingbeats', 'Hand colored Linocut collage on gilded paper', '26&quot x 8 1/2&quot']},
                     {src:'', caption:[]}];
@@ -84,11 +84,9 @@ $(document).ready(function(){
                     caption += line + '</br>';
                 })
                 //create lightbox thumbnail
-                var figure = $('<figure class="img-caption-bundle"></figure>')
-                var img = $('<a  class="img-thumb" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '" style="background-image:url(\'' + link.src + '.jpg\')"></a>');
+                var figure = $('<a  class="img-caption-bundle" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '"></a>');
 
-                //figure.append('<img src="' + link.src + '.jpg">');
-                figure.append(img);
+                figure.append('<img src="' + link.src + '.jpg">');
                 figure.append('<p class="img-caption">' + link.caption[0] + '<p>');
                 //append thumbnail to page layout
                 gallery.append(figure);
