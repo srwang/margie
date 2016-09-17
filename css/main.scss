@@ -5,6 +5,7 @@
 
 body {
 	background-color: #efe8bd;
+  color: black;
 }
 
 .navbar:current {
@@ -27,6 +28,11 @@ body {
 	font-size: 0.8em;
 	margin-top: 50px;
 	text-align: center;
+}
+
+.yellowbox {
+  border: 7px solid #FFFF00;
+  padding: 8px;
 }
 
 
@@ -101,12 +107,50 @@ body {
 
 .lb-image {
 	max-height: 80vh !important;
-	width: auto !important;
+  width: auto !important;
+	max-width: 90vw !important;
+  height: auto !important;
 }
 
 .lb-caption {
 	text-align: center;
 }
+
+//about page
+#about-info {
+  margin: 150px 200px 0px 200px;
+
+  #contact-info {
+    line-height: 0.8em;
+    margin-bottom: 40px;
+  }
+
+  .about-page-section {
+    padding: 0px 60px;
+    margin: 50px 0px;
+  }
+
+  .section-title {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  #bio {
+    clear: both;
+    margin-top: 100px;
+  }
+
+  #exhibits, #galleries {
+    //text-align: center;
+  }
+
+  #exhibits {
+    iframe {
+      text-align: center;
+    }
+  }
+}
+
 
 //from crispie.css (orig css file)
 
@@ -183,10 +227,10 @@ td.withline {
 }
 
 h1 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 16px;
-  text-align: right;
-  color: #666666;
+  //font-family: Georgia, Times, "Times New Roman", serif;
+  //font-size: 16px;
+  //text-align: right;
+  //color: #666666;
 }
 
 td.topline {

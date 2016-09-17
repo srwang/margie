@@ -2,7 +2,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #efe8bd; }
+  background-color: #efe8bd;
+  color: black; }
 
 .navbar:current {
   background-color: brown; }
@@ -21,6 +22,10 @@ body {
   font-size: 0.8em;
   margin-top: 50px;
   text-align: center; }
+
+.yellowbox {
+  border: 7px solid #FFFF00;
+  padding: 8px; }
 
 .sold-text {
   text-align: center;
@@ -73,10 +78,29 @@ body {
 
 .lb-image {
   max-height: 80vh !important;
-  width: auto !important; }
+  width: auto !important;
+  max-width: 90vw !important;
+  height: auto !important; }
 
 .lb-caption {
   text-align: center; }
+
+#about-info {
+  margin: 150px 200px 0px 200px; }
+  #about-info #contact-info {
+    line-height: 0.8em;
+    margin-bottom: 40px; }
+  #about-info .about-page-section {
+    padding: 0px 60px;
+    margin: 50px 0px; }
+  #about-info .section-title {
+    font-size: 25px;
+    text-align: left; }
+  #about-info #bio {
+    clear: both;
+    margin-top: 100px; }
+  #about-info #exhibits iframe {
+    text-align: center; }
 
 p {
   font-family: Verdana, Helvetica, Arial, sans-serif;
@@ -139,12 +163,6 @@ p.fineprint {
 td.withline {
   border-top: 1px #cc9933 solid;
   border-left: 1px #cc9933 solid; }
-
-h1 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 16px;
-  text-align: right;
-  color: #666666; }
 
 td.topline {
   border-top: 1px #cc9933 solid; }
