@@ -1,6 +1,21 @@
 
 
 $(document).ready(function(){
+
+    $('#home-link-to-art').mouseenter(function(){
+        $('.bar').hide();
+    });
+    $('#home-link-to-art').mouseleave(function(){
+        $('.bar').show();
+    });
+
+    $('#home-link-to-about').mouseenter(function(){
+        $('.bar').hide();
+    });
+    $('#home-link-to-about').mouseleave(function(){
+        $('.bar').show();
+    });
+
     //gallery objects
     var lithoGal = [{src:'Aransas_I&2', caption: ['Aransas I & II','Hand colored Linocut','12&quot; x 9&quot;']},
                     {src: 'Cliff SwallowsI',caption: ['Cliff Swallows I','Lithograph 11','1/2&quot; x 16&quot;'], sold: true},

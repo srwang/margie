@@ -1,4 +1,9 @@
 //shared
+$brown : rgb(54, 47, 45);
+$beige : rgb(238, 233, 211);
+$yellow: rgb(171, 159, 21);
+$cyan: rgb(0, 175, 236);
+
 * {
   box-sizing: border-box;
 }
@@ -16,12 +21,22 @@
 }
 
 body {
-	background-color: #efe8bd;
+  margin: 0;
+	background-color: $beige;
   color: black;
 }
 
-.navbar:current {
-	background-color: brown;	
+.navbar {
+  width: 400px;
+  //float: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: $brown;
+}
+
+.current-link a:link, .current-link a:visited{
+	color: $cyan !important;
 }
 
 .page-title {
@@ -30,28 +45,79 @@ body {
 	color: black;
 }
 
-.page-center {
-	display: inline-block;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .copyright {
-	font-size: 0.8em;
-	margin-top: 50px;
-	text-align: center;
+  width: 400px;
+  font-size: 0.6em;
+  margin: 50px auto 0px auto;
+  padding: 5px 0px;
+  background-color: $brown;
+  color: $beige;
+  text-align: center;
+
+  a {
+    color: $beige !important;
+  }
+  a:hover {
+    color: $yellow !important;
+  }
 }
 
-.yellowbox {
-  border: 7px solid #FFFF00;
-  padding: 8px;
+.copyright-no-bg {
+  clear: both;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 50px;
+  color: gray;
+}
+
+.large-width {
+  width: 100%;
+}
+
+//home and art landing
+
+.title-img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 70px auto 20px auto;
+}
+
+.swapped-img-position {
+  display: block;
+  margin: 0px auto;
+}
+
+#art-landing-img {
+  margin-top: 100px;
+}
+
+.links-wrapper {
+  display: block;
+  margin: 50px auto;
+  padding: 0px 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#art-page-links {
+  margin: 50px auto;
+  display: block;
+  text-align: center;
 }
 
 //books page
+
+.books-wrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .book-link-wrapper {
-  margin: 40px auto;
+  display: inline-block;
   width: 450px;
-  text-align: center;
   font-size: 0.8em;
 
   img {
@@ -60,13 +126,40 @@ body {
   }
 }
 
+.bar {
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  background-color: $brown;
+}
 
+.left-bar {
+  left: 0px;
+}
+
+.right-bar {
+  right: 0px;
+}
 
 //img gallery
 
-.sold-text {
+.gallery-header {
   text-align: center;
-  margin-top: -10px;
+  background-color: $brown;
+  border-bottom: 2px solid $yellow;
+  width: 100%;
+  img {
+    height: 70px;
+    margin-top: 20px;
+  }
+}
+
+.sold-text {
+  text-align: left;
+  position: relative;
+  left: 170px;
+  top: 60px;
   font-style: italic;
 
   p {
@@ -87,7 +180,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-  margin: 100px 150px 0px 150px;
+  margin: 50px 150px 0px 150px;
 }
 
 .img-caption-bundle {
@@ -202,14 +295,13 @@ p.purchase {
 }
 
 body {
-  background-color: #efe8bd;
   top: 20px;
   font-size: 100%;
 }
 
 a:link {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #333333;
+  color: rgb(90, 89, 89);
   font-size: 100%;
   text-decoration: none;
   font-weight: bold;
@@ -217,7 +309,7 @@ a:link {
 
 a:visited {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #333333;
+  color: rgb(90, 89, 89);
   font-size: 100%;
   text-decoration: none;
   font-weight: bold;
@@ -225,31 +317,29 @@ a:visited {
 
 a:active {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #cc9933;
+  color: $yellow;
   font-size: 100%;
-  text-decoration: underline;
   font-weight: bold;
 }
 
 a:hover {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #cc9933;
+  color: $yellow;
   font-size: 100%;
-  text-decoration: underline;
   font-weight: bold;
 }
 
 p.fineprint {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #333333;
+  color: rgb(90, 89, 89);
   font-size: 1em;
   text-align: left;
   margin-left: 10px;
 }
 
 td.withline {
-  border-top: 1px #cc9933 solid;
-  border-left: 1px #cc9933 solid;
+  border-top: 1px $yellow solid;
+  border-left: 1px $yellow solid;
 }
 
 h1 {
@@ -260,20 +350,17 @@ h1 {
 }
 
 td.topline {
-  border-top: 1px #cc9933 solid;
+  border-top: 1px $yellow solid;
 }
 
-td.navbar {
+nav-link{
   font-family: Verdana, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 80%;
   background-color: #333333;
   text-align: center;
-  color: #cc9933;
-  font-size: 70%;
-  font-weight: bold;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  border-right: 1px #cc9933 solid;
-  border-bottom: 1px #cc9933 solid;
+  color: $yellow;
+  padding: 5px 0px;
 }
 
 a.nav:link {
@@ -291,14 +378,14 @@ a.nav:visited {
 }
 
 a.nav:active {
-  color: #cc9933;
+  color: $yellow;
   text-decoration: underline;
   font-weight: bold;
   font-size: 100%;
 }
 
 a.nav:hover {
-  color: #cc9933;
+  color: $yellow;
   text-decoration: underline;
   font-weight: bold;
   font-size: 100%;
@@ -326,14 +413,14 @@ a.copyright:visited {
 
 a.copyright:active {
   font-size: 100%;
-  color: #cc9933;
+  color: $yellow;
   text-decoration: underline;
   font-weight: bold;
 }
 
 a.copyright:hover {
   font-size: 100%;
-  color: #cc9933;
+  color: $yellow;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -356,18 +443,16 @@ a.twelve:visited {
 
 a.twelve:active {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #cc9933;
+  color: $yellow;
   font-size: 1em;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 a.twelve:hover {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  color: #cc9933;
+  color: $yellow;
   font-size: 1em;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 li {

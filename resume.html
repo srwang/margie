@@ -27,20 +27,20 @@ function popup(URL) {
   </head>
   <body bgcolor="#efe8bd" text="#000000" leftmargin="0" topmargin="0" marginwidth="0"
   marginheight="0">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
-   <tr> 
-    <td>     <table align="center" width="100%" cellpadding="2" cellspacing="0"> 
-        <tr> 
-       <td class="navbar"> 
-        <a href="index.html" target="_parent" class="nav">Home</a></td> 
-       <td class="navbar"> 
-        <a class="nav" href="art_page/index.html" target="_parent">Art</a></td> 
-       <td class="navbar"> 
-        <a href="books_page/index.html" target="_parent" class="nav">Books</a></td>  
-       <td class="navbar"><a href="resume.html" target="_parent" class="nav">About</a></td> 
-      </tr> 
-     </table> </td> 
-  </table>
+
+  <header class='gallery-header'>
+    <img src='assets/CrispNameDisplay_brown.jpg'/>
+  </header>
+
+  <div class="navbar large-width">
+    <div class="nav-link"> 
+      <a href="index.html" target="_parent" class="nav">Home</a></div> 
+     <div class="nav-link"> 
+      <a class="nav" href="art_page/index.html" target="_parent">Art</a></div> 
+     <div class="nav-link"> 
+      <a href="books_page/index.html" target="_parent" class="nav">Books</a></div>  
+     <div class="nav-link current-link"><a href="resume.html" target="_parent" class="nav">About</a></div> 
+  </div>
 
   <div id='about-info'>
     <figure class='group' id='photo-and-contact'>
@@ -95,6 +95,7 @@ function popup(URL) {
           <p>&nbsp;</p>
           <p>If the embedded calendar does not appear, please try this <a href="https://www.google.com/calendar/embed?src=k3kivbdrdpvpdutjp782eb151k%40group.calendar.google.com&ctz=America/Chicago" target="_blank">link to Google Calendars</a>.</p></td>
     </div>
+<!--     <p class="copyright-no-bg">&copy;2002-2016 Margie Crisp &#149; Design by <a href='http://www.sharon-r-wang.com' target='_blank'>Sharon R. Wang</a> &amp; Margie Crisp</p>  -->
   </div>
 </body>
 </html>
