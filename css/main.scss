@@ -3,6 +3,18 @@
   box-sizing: border-box;
 }
 
+.group:before, //clearfix hack
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
 body {
 	background-color: #efe8bd;
   color: black;
@@ -33,6 +45,19 @@ body {
 .yellowbox {
   border: 7px solid #FFFF00;
   padding: 8px;
+}
+
+//books page
+.book-link-wrapper {
+  margin: 40px auto;
+  width: 450px;
+  text-align: center;
+  font-size: 0.8em;
+
+  img {
+    width: 400px;
+    height: 330px;
+  }
 }
 
 
@@ -126,6 +151,7 @@ body {
   }
 
   .about-page-section {
+    clear: both;
     padding: 0px 60px;
     margin: 50px 0px;
   }

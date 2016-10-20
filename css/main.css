@@ -1,6 +1,18 @@
 * {
   box-sizing: border-box; }
 
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
 body {
   background-color: #efe8bd;
   color: black; }
@@ -26,6 +38,15 @@ body {
 .yellowbox {
   border: 7px solid #FFFF00;
   padding: 8px; }
+
+.book-link-wrapper {
+  margin: 40px auto;
+  width: 450px;
+  text-align: center;
+  font-size: 0.8em; }
+  .book-link-wrapper img {
+    width: 400px;
+    height: 330px; }
 
 .sold-text {
   text-align: center;
@@ -91,6 +112,7 @@ body {
     line-height: 0.8em;
     margin-bottom: 40px; }
   #about-info .about-page-section {
+    clear: both;
     padding: 0px 60px;
     margin: 50px 0px; }
   #about-info .section-title {
