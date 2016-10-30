@@ -2,19 +2,10 @@
 
 $(document).ready(function(){
 
-    $('#home-link-to-art').mouseenter(function(){
-        $('.bar').hide();
-    });
-    $('#home-link-to-art').mouseleave(function(){
-        $('.bar').show();
-    });
-
-    $('#home-link-to-about').mouseenter(function(){
-        $('.bar').hide();
-    });
-    $('#home-link-to-about').mouseleave(function(){
-        $('.bar').show();
-    });
+    $(window).resize(function(){ //keep image height uniform to avoid blinking links
+        var imgWidth = $('.swapped-img-position').width();
+        $('.swapped-img-position').height(imgWidth * 0.72);
+    })
 
     //gallery objects
     var lithoGal = [{src:'Aransas_I&2', caption: ['Aransas I & II','Hand colored Linocut','12&quot; x 9&quot;']},

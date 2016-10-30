@@ -56,15 +56,20 @@ body {
 .large-width {
   width: 100%; }
 
+.decorative-top-bar {
+  height: 20px;
+  background-color: #362f2d;
+  margin: 0 auto; }
+
 .title-img {
-  max-width: 500px;
+  width: 600px;
   height: auto;
   display: block;
-  margin: 70px auto 20px auto; }
+  margin: 70px auto 10px auto; }
 
 .swapped-img-position {
   display: block;
-  margin: 0px auto; }
+  margin: 0 auto; }
 
 #art-landing-img {
   margin-top: 100px; }
@@ -72,15 +77,17 @@ body {
 .links-wrapper {
   display: block;
   margin: 50px auto;
-  padding: 0px 20px;
-  width: 400px;
-  display: flex;
-  justify-content: space-between; }
+  padding: 0px 30px;
+  width: 400px; }
+  .links-wrapper a {
+    text-align: center; }
 
 #art-page-links {
   margin: 50px auto;
   display: block;
   text-align: center; }
+  #art-page-links a {
+    line-height: 2em; }
 
 .books-wrapper {
   margin-top: 100px;
@@ -98,7 +105,7 @@ body {
 .bar {
   width: 200px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background-color: #362f2d; }
 
@@ -257,10 +264,9 @@ td.withline {
 td.topline {
   border-top: 1px #ab9f15 solid; }
 
-nav-link {
+.nav-link {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 80%;
+  font-size: 85%;
   background-color: #333333;
   text-align: center;
   color: #ab9f15;
@@ -269,25 +275,23 @@ nav-link {
 a.nav:link {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #cccccc;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 100%; }
 
 a.nav:visited {
   text-decoration: none;
-  font-weight: bold;
   color: #cccccc;
   font-size: 100%; }
 
 a.nav:active {
   color: #ab9f15;
   text-decoration: underline;
-  font-weight: bold;
   font-size: 100%; }
 
 a.nav:hover {
   color: #ab9f15;
   text-decoration: underline;
-  font-weight: bold;
   font-size: 100%; }
 
 td.copyright {

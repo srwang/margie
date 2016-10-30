@@ -76,16 +76,22 @@ body {
 
 //home and art landing
 
+.decorative-top-bar {
+  height: 20px;
+  background-color: $brown;
+  margin: 0 auto;
+}
+
 .title-img {
-  max-width: 500px;
+  width: 600px;
   height: auto;
   display: block;
-  margin: 70px auto 20px auto;
+  margin: 70px auto 10px auto;
 }
 
 .swapped-img-position {
   display: block;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 #art-landing-img {
@@ -95,16 +101,22 @@ body {
 .links-wrapper {
   display: block;
   margin: 50px auto;
-  padding: 0px 20px;
+  padding: 0px 30px;
   width: 400px;
-  display: flex;
-  justify-content: space-between;
+
+  a {
+    text-align: center;
+  }
 }
 
 #art-page-links {
   margin: 50px auto;
   display: block;
   text-align: center;
+
+  a {
+    line-height: 2em;
+  }
 }
 
 //books page
@@ -129,7 +141,7 @@ body {
 .bar {
   width: 200px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background-color: $brown;
 }
@@ -209,10 +221,6 @@ body {
 
 #painting-gal .img-caption-bundle {
   margin-bottom: 60px;
-}
-
-.img-caption-bundle small {
-  
 }
 
 .img-caption-bundle:hover {
@@ -353,10 +361,9 @@ td.topline {
   border-top: 1px $yellow solid;
 }
 
-nav-link{
+.nav-link{
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 80%;
+  font-size: 85%;
   background-color: #333333;
   text-align: center;
   color: $yellow;
@@ -366,13 +373,13 @@ nav-link{
 a.nav:link {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #cccccc;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 100%;
 }
 
 a.nav:visited {
   text-decoration: none;
-  font-weight: bold;
   color: #cccccc;
   font-size: 100%;
 }
@@ -380,14 +387,12 @@ a.nav:visited {
 a.nav:active {
   color: $yellow;
   text-decoration: underline;
-  font-weight: bold;
   font-size: 100%;
 }
 
 a.nav:hover {
   color: $yellow;
   text-decoration: underline;
-  font-weight: bold;
   font-size: 100%;
 }
 
