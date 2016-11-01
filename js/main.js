@@ -76,11 +76,11 @@ $(document).ready(function(){
                         {src: '27_Shepard\'s Camp-med copy', caption: ['Shepard&#39;s Camp', 'Charcoal on paper', '22&quot x 30&quot']}];
 
     //create lightbox thumbnails and images
-    loadGallery('painting-gal', paintingGal, 4);
-    loadGallery('litho-gal', lithoGal, 1);
+    loadGallery('painting-gal', paintingGal);
+    loadGallery('litho-gal', lithoGal);
 
     //extraDiv is to keep flexbox layout even
-    function loadGallery(pageId, links, extraDiv) {
+    function loadGallery(pageId, links) {
         if ($('#' + pageId).length > 0) {
             var gallery = $('#' +pageId).find('.img-gallery');
             links.forEach(function(link){
@@ -90,7 +90,7 @@ $(document).ready(function(){
                     caption += line + '</br>';
                 })
                 //create lightbox thumbnail
-                var figure = $('<a  class="img-caption-bundle" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '"></a>');
+                var figure = $('<a  class="img-caption-bundle small-12 medium-4 large-2 columns" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '"></a>');
 
                 figure.append('<img src="' + link.src + '.jpg">');
 
@@ -102,10 +102,6 @@ $(document).ready(function(){
                 //append thumbnail to page layout
                 gallery.append(figure);
             }); 
-            //padding out flexbox with empty divs
-            for (var i=0; i<extraDiv; i++) {
-                gallery.append('<div class="img-caption-bundle"></div>')
-            }
         }
     }
 });

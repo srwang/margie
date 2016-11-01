@@ -18,8 +18,8 @@ body {
   background-color: #eee9d3;
   color: black; }
 
-.navbar {
-  width: 100%;
+.navbar.row {
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   max-width: initial; }
@@ -91,7 +91,8 @@ body {
 .book-link-wrapper {
   display: inline-block;
   margin-bottom: 30px;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  position: relative; }
   .book-link-wrapper img {
     display: block;
     margin: 0px auto; }
@@ -136,14 +137,9 @@ body {
   display: inline-block; }
 
 .img-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   margin: 50px 150px 0px 150px; }
 
 .img-caption-bundle {
-  width: 18%;
-  height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 50px;
