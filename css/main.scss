@@ -86,6 +86,7 @@ body {
 .swapped-img-position {
   display: block;
   margin: 0 auto;
+  height: 350px;
 }
 
 #art-landing-img {
@@ -162,14 +163,16 @@ body {
 
 .sold-text {
   text-align: left;
-  position: relative;
-  left: 170px;
-  top: 60px;
   font-style: italic;
+  margin: 0px 150px;
+  width: 100%;
+  position: absolute;
+  top: 185px;
+  left: -30px;
+}
 
-  p {
-    display: inline-block;
-  }
+.img-gallery {
+  margin: 80px 150px 0px 150px;
 }
 
 .red-dot {
@@ -177,25 +180,17 @@ body {
   background-size: cover;
   width: 8px;
   height: 8px;
-  margin: 0px 10px;
-  display: inline-block;
-}
-
-.img-gallery {
-	//display: flex;
-	//flex-wrap: wrap;
-	//justify-content: space-around;
-  margin: 50px 150px 0px 150px;
+  margin: 0px 5px;
+  float: left;
+  position: relative;
+  top: 5px;
 }
 
 .img-caption-bundle {
-  //width: 18%;
-  //height:200px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 50px;
   padding: auto 0px;
-  text-align: center;
 
   img {
     display: block;
@@ -205,11 +200,12 @@ body {
     text-align: center;
 	}
 
-	.img-caption {
-    display: inline-block;
-		text-align: center;
-		font-size: 0.8em;
-	}
+  .img-caption {
+    font-size: 0.8em;
+    position: relative;
+    left: 5%;
+  }
+
 }
 
 #painting-gal .img-caption-bundle {
@@ -356,7 +352,7 @@ td.topline {
 
 .nav-link{
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  font-size: 85%;
+  font-size: 0.85em;
   background-color: #333333;
   text-align: center;
   color: $yellow;
@@ -464,4 +460,11 @@ h2 {
   color: #333333;
   font-size: 1em;
   font-weight: bold;
+}
+
+//media query
+@media (max-width: 700px) {
+  .nav-link {
+    font-size: 0.55em;
+  }
 }

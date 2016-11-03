@@ -9,8 +9,7 @@ $(document).ready(function(){
 
     //gallery objects
     var lithoGal = [{src:'Aransas_I&2', caption: ['Aransas I & II','Hand colored Linocut','12&quot; x 9&quot;']},
-                    {src: 'Cliff SwallowsI',caption: ['Cliff Swallows I','Lithograph 11','1/2&quot; x 16&quot;'], sold: true},
-                    {src:'Arbor Vitae', caption: ['Arbor Vitae', 'Hand colored linoleum cut', '44 1/4&quot x 56&quot']},
+                    {src: 'Cliff SwallowsI',caption: ['Cliff Swallows I','Lithograph 11','1/2&quot; x 16&quot;']},
                     {src:'barnswallows1', caption: ['Barn Swallow I', 'Hand colored linocut', '9&quot x 6&quot']},
                     {src:'barnswallows2', caption: ['Barn Swallow II', 'Hand colored linocut', '9&quot x 6&quot']},
                     {src:'batscongressavebridge', caption:['Bats & Congress Avenue Bridge', 'Hand colored Lithograph', '11 1/4&quot x 11 9/16&quot']},
@@ -20,28 +19,29 @@ $(document).ready(function(){
                     {src:'cottontops', caption:['Cotton-Tops', 'Hand colored Linocut', '8 3/16&quot x 8 3/16&quot']},
                     {src:'Dawn', caption:['Dawn', 'Hand colored Linocut collage on gilded paper', '30&quot x 32&quot']},
                     {src:'01 EarlySpring-copy', caption:['Early Spring in the Basin', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
-                    {src:'edge of the world', caption:['Edge of the World', 'Hand colored linocut', '24&quot x 36&quot']},
-                    {src:'FlockRWBB copy', caption:['Small Flock', 'Hand colored Linocut collage on gilded paper', '22&quot x 13 1/2&quot']},
-                    {src:'Gallo Pinto', caption:['El Gallo Pintado', 'Hand colored lithograph', '18&quot; x 14&quot;'], sold: true},
-                    {src:'greentreefrogday', caption:['Green Treefrog: Daytime', 'Hand colored Linocut', '4&quot; x 4&quot;'], small: true},
-                    {src:'greentreefrognight', caption:['Green Treefrog: Nighttime', 'Hand colored Linocut', '4&quot; x 4&quot;'], small: true},
-                    {src:'Helianthus and Heron', caption:['Helianthus & Heron', 'Hand colored linoleum cut', '44 1/4&quot x 30&quot']},
-                    {src:'Montezuma_Quail', caption:['Montezuma Quail', 'Hand colored linoleum cut', '5&quot; x 5&quot;']},
-                    {src:'Narcissus', caption:['Narcissus', 'Lithograph', '15 1/2&quot x 11 1/2&quot']},
-                    {src:'06_New World', caption:['New World', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
-                    {src:'Nightshade', caption:['Nightshade', 'Lithograph', '15 1/2&quot x 11 1/2&quot']},
-                    {src:'Oil & Water copy', caption:['Oil and Water', 'Lithograph', '8&quot; x 11&quot;']},
-                    {src:'Optunia and Caracara', caption:['Opuntia & Caracara', 'Hand colored linoleum cut', '44 1/4&quot x 30&quot'], sold: true},
-                    {src:'PegasusRising', caption:['Pegasus Rising (litho)', 'Lithograph', '11 7/8&quot; x 16 7/78&quot;']},
-                    {src:'Renegade', caption:['Renegade II', 'Renegade II', '9.25&quot x 14.5&quot']},
                     {src:'02 Reserved Beauty', caption:['Reserved Beauty', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
-                    {src:'riverdocknight', caption:['River Dock at Night', 'Hand colored Lithograph', '3 1/4&quot x 4 1/2&quot']},
                     {src:'03 River Revealed_ copy', caption:['River Revealed', 'Hand-colored Lithograph', '17&quot; x 22 1/2&quot']},
                     {src:'04_Buchanan Dam', caption:['In the Shadow of Buchanan Dam', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'05_SummerRiver-copy', caption:['Summer River', 'Hand-colored Lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'06_New World', caption:['New World', 'Hand colored lithograph', '17&quot; x 22 1/2&quot']},
+                    {src:'edge of the world', caption:['Edge of the World', 'Hand colored linocut', '24&quot x 36&quot']},
+                    {src:'FlockRWBB copy', caption:['Small Flock', 'Hand colored Linocut collage on gilded paper', '22&quot x 13 1/2&quot']},
+                    {src:'Gallo Pinto', caption:['El Gallo Pintado', 'Hand colored lithograph', '18&quot; x 14&quot;']},
+                    {src:'greentreefrogday', caption:['Green Treefrog: Daytime', 'Hand colored Linocut', '4&quot; x 4&quot;']},
+                    {src:'greentreefrognight', caption:['Green Treefrog: Nighttime', 'Hand colored Linocut', '4&quot; x 4&quot;']},
+                    {src:'Helianthus and Heron', caption:['Helianthus & Heron', 'Hand colored linoleum cut', '44 1/4&quot x 30&quot']},
+                    {src:'Arbor Vitae', caption: ['Arbor Vitae', 'Hand colored linoleum cut', '44 1/4&quot x 56&quot']},
+                    {src:'Optunia and Caracara', caption:['Opuntia & Caracara', 'Hand colored linoleum cut', '44 1/4&quot x 30&quot']},
+                    {src:'Montezuma_Quail', caption:['Montezuma Quail', 'Hand colored linoleum cut', '5&quot; x 5&quot;']},
+                    {src:'Narcissus', caption:['Narcissus', 'Lithograph', '15 1/2&quot x 11 1/2&quot']},
+                    {src:'Nightshade', caption:['Nightshade', 'Lithograph', '15 1/2&quot x 11 1/2&quot']},
+                    {src:'Oil & Water copy', caption:['Oil and Water', 'Lithograph', '8&quot; x 11&quot;']},
+                    {src:'PegasusRising', caption:['Pegasus Rising (litho)', 'Lithograph', '11 7/8&quot; x 16 7/78&quot;']},
+                    {src:'Renegade', caption:['Renegade II', 'Renegade II', '9.25&quot x 14.5&quot']},
+                    {src:'riverdocknight', caption:['River Dock at Night', 'Hand colored Lithograph', '3 1/4&quot x 4 1/2&quot']},
                     {src:'soloRWBB', caption:['Solo', 'Hand colored Linocut collage on gilded paper', '10 3/4&quot x 11&quot']},
                     {src:'songsparrow1', caption:['Song Sparrow I', 'Color Lithograph', '5&quot x 6&quot']},
                     {src:'Summer Garden', caption:['Summer Garden', 'Hand colored Linocut', '18&quot x 24&quot']},
-                    {src:'05_SummerRiver-copy', caption:['Summer River', 'Hand-colored Lithograph', '17&quot; x 22 1/2&quot'], sold: true},
                     {src:'Daybreak1', caption:['Daybreak I', 'Linocut', '15&quot x 35&quot']},
                     {src:'DaybreakII', caption:['Daybreak II', 'Hand colored Linocut', '15&quot x 35&quot']},
                     {src:'Spotted Gar copy', caption:['Spotted Gar', 'Hand colored linocut', '7 1/2&quot; x 26 1/2&quot;']},
@@ -50,26 +50,26 @@ $(document).ready(function(){
 
     var paintingGal = [{src: '01_Aigrette', caption: ['Aigrette', 'Acrylic on panel', '16&quot x 20&quot']},
                         {src: '02_BlueGrosbeck_Flame', caption: ['Blue Grosbeck & Flame Sumac', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot']},
-                        {src: '03_InVinoVeritas', caption:['In Vino Veritas', 'Acrylic and 24k gold leaf on paper mounted to panel', '30&quot x 22&quot'], sold: true},
+                        {src: '03_InVinoVeritas', caption:['In Vino Veritas', 'Acrylic and 24k gold leaf on paper mounted to panel', '30&quot x 22&quot']},
                         {src: '04_IndigoBuntingBeautyBerry', caption:['Indigo Bunting and Beauty Berry', 'Egg Tempera with 24k gold leaf on panel', '14&quot x 11&quot']},
-                        {src: '06_BrownLeghornHen', caption:['Brown Leghorn Hen', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot']},
-                        {src: '07_BrownLeghornRooster300 copy', caption: ['Brown Leghorn Rooster', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot']},
+                        {src: '06_BrownLeghornHen', caption:['Brown Leghorn Hen', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot'], sold: true},
+                        {src: '07_BrownLeghornRooster300 copy', caption: ['Brown Leghorn Rooster', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot'], sold: true},
                         {src: '08_CrypticYellow_med copy', caption: ['Cryptic Yellow', 'Watercolor and graphite', '15&quot x 20&quot']},
                         {src: '09_Milk&WineCrinum_med_edited-1 copy', caption: ['Milk and Wine Crinum', 'Watercolor and graphite', '15&quot x 20&quot']},
                         {src: '10_PaisanoPortrait_med copy', caption: ['Paisano Portrait', 'Watercolor and Graphite', '22&quot x 22&quot'], sold: true},
-                        {src: '11_Black_capVireo-med copy', caption: ['Endangered Species Icon: Black-capped Vireo', 'Egg Tempera with 24k gold leaf on panel', '14&quot x 11&quot']},
-                        {src: '12_hercules-med copy', caption: ['Hercules', 'Egg Tempera with 24k gold leaf and 24k shell gold on panel', '16&quot x 20&quot']},
-                        {src: '13_Cardinal-archtop-med copy', caption: ['Righteous', 'Egg Tempera with 24k gold leaf on panel', '5&quot x 6&quot'], sold: true},
-                        {src: '14_Rain Crows_med copy', caption: ['Rain Crows', 'Egg tempera on panel', '16&quot x 12&quot']},
-                        {src: '15_GildedAgaveNo2 copy', caption: ['Gilded Agave No. 2', 'Egg Tempera with 24k gold leaf on panel', '14&quot x 11&quot']},
-                        {src: '16_BabyBass-med copy', caption: ['Baby Bass', 'Egg Tempera on panel', '10&quot x 8&quot']},
-                        {src: '17_CommonYellowthroat-med copy', caption: ['Common Yellowthroat', 'Mixed media on panel', '18&quot x 8&quot']},
-                        {src: '18_PunkKingfisher copy', caption: ['Punk Kingfisher (Belted)', 'Mixed media on panel', '10&quot x 8&quot']},
-                        {src: '19_DarkGreenCardinal_med copy', caption: ['Cardinal with Dark Green', 'Watercolor', '4&quot x 4&quot']},
-                        {src: '20_TurquioseCardinal_med copy', caption: ['Cardinal with Turquoise', 'Watercolor', '4&quot x 4&quot']},
-                        {src: '21_pyro&firecatchers-med copy', caption: ['Pyro-loxia and Scissor-tailed Firecatchers', 'Egg tempera on panel', '8&quot x 10&quot']},
-                        {src: '22_pyrrhuBurning-med', caption: ['Burning Pyrrhuloxia', 'Egg tempera and 24k shell gold on panel', '5&quot x 6&quot'], sold: true},
-                        {src: '23_RainingFrogs&Fishes copy', caption: ['Raining Frogs and Fishes', 'Graphite on paper', '30&quot x 42&quot']},
+                        {src: '11_Black_capVireo-med copy', caption: ['Endangered Species Icon: Black-capped Vireo', 'Egg Tempera with 24k gold leaf on panel', '14&quot x 11&quot'], sold: true},
+                        {src: '12_hercules-med copy', caption: ['Hercules', 'Egg Tempera with 24k gold leaf and 24k shell gold on panel', '16&quot x 20&quot'], sold: true},
+                        {src: '13_Cardinal-archtop-med copy', caption: ['Righteous', 'Egg Tempera with 24k gold leaf on panel', '5&quot x 6&quot'], sold:true},
+                        {src: '14_Rain Crows_med copy', caption: ['Rain Crows', 'Egg tempera on panel', '16&quot x 12&quot'], sold:true},
+                        {src: '15_GildedAgaveNo2 copy', caption: ['Gilded Agave No. 2', 'Egg Tempera with 24k gold leaf on panel', '14&quot x 11&quot'], sold:true},
+                        {src: '16_BabyBass-med copy', caption: ['Baby Bass', 'Egg Tempera on panel', '10&quot x 8&quot'], sold:true},
+                        {src: '17_CommonYellowthroat-med copy', caption: ['Common Yellowthroat', 'Mixed media on panel', '18&quot x 8&quot'], sold:true},
+                        {src: '18_PunkKingfisher copy', caption: ['Punk Kingfisher (Belted)', 'Mixed media on panel', '10&quot x 8&quot'], sold:true},
+                        {src: '19_DarkGreenCardinal_med copy', caption: ['Cardinal with Dark Green', 'Watercolor', '4&quot x 4&quot'], sold:true},
+                        {src: '20_TurquioseCardinal_med copy', caption: ['Cardinal with Turquoise', 'Watercolor', '4&quot x 4&quot'], sold:true},
+                        {src: '21_pyro&firecatchers-med copy', caption: ['Pyro-loxia and Scissor-tailed Firecatchers', 'Egg tempera on panel', '8&quot x 10&quot'], sold:true},
+                        {src: '22_pyrrhuBurning-med', caption: ['Burning Pyrrhuloxia', 'Egg tempera and 24k shell gold on panel', '5&quot x 6&quot'], sold:true},
+                        {src: '23_RainingFrogs&Fishes copy', caption: ['Raining Frogs and Fishes', 'Graphite on paper', '30&quot x 42&quot'], sold:true},
                         {src: '24_GreatEgret-med copy', caption: ['Great Egret', 'Charcoal on paper', '30&quot x 22&quot']},
                         {src: '25_Buffalo Creek-med', caption: ['Morning on Buffalo Creek', 'Charcoal on paper', '22&quot x 30&quot']},
                         {src: '26_Emu-med copy', caption: ['Emu', 'Charcoal on paper', '51&quot x 54&quot']},
@@ -79,7 +79,6 @@ $(document).ready(function(){
     loadGallery('painting-gal', paintingGal);
     loadGallery('litho-gal', lithoGal);
 
-    //extraDiv is to keep flexbox layout even
     function loadGallery(pageId, links) {
         if ($('#' + pageId).length > 0) {
             var gallery = $('#' +pageId).find('.img-gallery');
@@ -90,12 +89,12 @@ $(document).ready(function(){
                     caption += line + '</br>';
                 })
                 //create lightbox thumbnail
-                var figure = $('<a  class="img-caption-bundle small-12 medium-4 large-2 columns" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '"></a>');
+                var figure = $('<a  class="img-caption-bundle small-12 medium-3 large-2 columns" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '"></a>');
 
                 figure.append('<img src="' + link.src + '.jpg">');
 
                 if (link.sold) {
-                    figure.append('<p class="img-caption">' + link.caption[0] + '</p><div class="red-dot"></div>');
+                    figure.append('<div class="red-dot"></div><p class="img-caption">' + link.caption[0] + '</p>');
                 } else {
                     figure.append('<p class="img-caption">' + link.caption[0] + '</p>');
                 }

@@ -65,7 +65,8 @@ body {
 
 .swapped-img-position {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 350px; }
 
 #art-landing-img {
   margin-top: 100px; }
@@ -121,30 +122,31 @@ body {
 
 .sold-text {
   text-align: left;
-  position: relative;
-  left: 170px;
-  top: 60px;
-  font-style: italic; }
-  .sold-text p {
-    display: inline-block; }
+  font-style: italic;
+  margin: 0px 150px;
+  width: 100%;
+  position: absolute;
+  top: 185px;
+  left: -30px; }
+
+.img-gallery {
+  margin: 80px 150px 0px 150px; }
 
 .red-dot {
   background-image: url("../images/red-circle.png");
   background-size: cover;
   width: 8px;
   height: 8px;
-  margin: 0px 10px;
-  display: inline-block; }
-
-.img-gallery {
-  margin: 50px 150px 0px 150px; }
+  margin: 0px 5px;
+  float: left;
+  position: relative;
+  top: 5px; }
 
 .img-caption-bundle {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 50px;
-  padding: auto 0px;
-  text-align: center; }
+  padding: auto 0px; }
   .img-caption-bundle img {
     display: block;
     max-width: 100%;
@@ -152,9 +154,9 @@ body {
     margin: auto;
     text-align: center; }
   .img-caption-bundle .img-caption {
-    display: inline-block;
-    text-align: center;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    position: relative;
+    left: 5%; }
 
 #painting-gal .img-caption-bundle {
   margin-bottom: 60px; }
@@ -256,7 +258,7 @@ td.topline {
 
 .nav-link {
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  font-size: 85%;
+  font-size: 0.85em;
   background-color: #333333;
   text-align: center;
   color: #ab9f15;
@@ -349,5 +351,9 @@ h2 {
   color: #333333;
   font-size: 1em;
   font-weight: bold; }
+
+@media (max-width: 700px) {
+  .nav-link {
+    font-size: 0.55em; } }
 
 /*# sourceMappingURL=main.css.map */
