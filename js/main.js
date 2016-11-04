@@ -1,16 +1,23 @@
 //keep image height uniform to avoid blinking links
 window.onload = function(){
-    var imgWidth = $('.swapped-img-position').width();
-    $('.swapped-img-position').height(imgWidth * 0.72);
+    adjWidth();
 };
 
 $(window).resize(function(){ 
+    adjWidth();
+})
+
+function adjWidth() {
     var imgWidth = $('.swapped-img-position').width();
     $('.swapped-img-position').height(imgWidth * 0.72);
-})
+}
 
 
 $(document).ready(function(){
+    adjWidth();
+    $('.homelinks').mouseover(function(){
+        adjWidth();
+    });
     //gallery objects
     var lithoGal = [{src:'Aransas_I&2', caption: ['Aransas I & II','Hand colored Linocut','12&quot; x 9&quot;']},
                     {src: 'Cliff SwallowsI',caption: ['Cliff Swallows I','Lithograph 11','1/2&quot; x 16&quot;']},
