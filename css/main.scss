@@ -258,54 +258,16 @@ body {
   }
 }
 
+#calendar-text {
+  clear: both;
+  margin-top: 15px;
+}
+
 .about-page-section {
   margin: 30px auto;
 }
 
-#exhibits {
-  iframe { //google calendar
-    width: 100%;
-    height: 100%;
-  }
-}
 
-#about-info {
-  //margin: 150px 200px 0px 200px;
-
-  #contact-info {
-    //line-height: 0.8em;
-    //margin-bottom: 40px;
-  }
-
-  .about-page-section {
-    //clear: both;
-    //padding: 0px 60px;
-    //margin: 50px 0px;
-  }
-
-  .section-title {
-    font-size: 25px;
-    text-align: left;
-  }
-
-  #bio {
-    //clear: both;
-    //margin-top: 100px;
-    p {
-      width: 100%;
-    }
-  }
-
-  #exhibits, #galleries {
-    //text-align: center;
-  }
-
-  #exhibits {
-    iframe {
-      //text-align: center;
-    }
-  }
-}
 
 
 //from crispie.css (orig css file)
