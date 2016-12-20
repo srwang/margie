@@ -263,10 +263,122 @@ body {
   margin-top: 15px;
 }
 
+#news {
+  text-align: center;
+}
+
 .about-page-section {
   margin: 30px auto;
 }
 
+.books-page-content {
+  margin-top: 30px;
+}
+
+.book-title {
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+}
+
+.book-left-bar {
+
+
+  a {
+    display: block;
+    width: 80%;
+    color: white !important;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 15px auto;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: none;
+  }
+
+  .books-page-cover {
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  .buy-link {
+    background-color: red;
+  }
+
+  .about-link {
+    background-color: blue;
+  }
+
+  .river-links-link {
+    background-color: green;
+  }
+
+  .prints-link {
+    background-color: lightgreen;
+  }
+
+  .share-box {
+    margin: 30px auto 0px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+
+    p {
+      color: red;
+      text-transform: uppercase;
+    }
+
+    i, div, g:plus {
+      display: inline-block;
+    }
+
+    .fb-share-button, .fb-share-button > a, &:visited, .twitter-share-button, &:visited, .google-link, &:visited {
+      color: black !important;
+      font-weight: thin !important;
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    .fb-share-button > a, &:visited {
+      height: 15px;
+      position: relative;
+      top: -5px;
+      left: -35px;
+    }
+
+    .twitter-share-button, &:visited {
+      position: relative;
+      top: -3px;
+      left: -18px;
+    }
+
+    .google-link {
+      position: relative;
+      top: -4px;
+      left: -10px;
+    }
+  }
+
+}
+
+.book-title-small {
+  font-size: 2em;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.praise {
+  color: red;
+}
 
 
 
@@ -465,6 +577,18 @@ h2 {
 }
 
 //media query
+@media (max-width: 650px) {
+  // .share-box .fa {
+  //   display: none;
+  // }
+  .share-box {
+    display: none;
+    // .fb-share-button, .fb-share-button > a, .twitter-share-button, .google-link {
+    //   position: absolute;
+    //   left: 0;
+    // }
+  }
+}
 @media (max-width: 700px) {
   .nav-link {
     font-size: 0.55em;
