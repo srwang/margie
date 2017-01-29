@@ -75,13 +75,29 @@ body {
 
 //home and art landing
 
+.bar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  background-color: $brown;
+}
+
+.left-bar {
+  left: 0px;
+}
+
+.right-bar {
+  right: 0px;
+}
+
 .decorative-top-bar {
   height: 20px;
   background-color: $brown;
   margin: 0 auto;
 }
 
-.title-row { //chrome streching for some reason :(
+.title-row { 
   max-height: 180px;
 }
 
@@ -121,10 +137,18 @@ body {
   }
 }
 
-//books page
+//books pages
+
+.books-page-content {
+  margin-top: 50px;
+}
 
 .books-wrapper {
   margin: 100px auto;
+}
+
+.book-main {
+  margin: 20px 0px;
 }
 
 .book-link-wrapper {
@@ -139,20 +163,127 @@ body {
   }
 }
 
-.bar {
-  width: 200px;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  background-color: $brown;
+.book-title {
+  padding: 10px 0px;
+  margin: 20px 0px;
+  border-bottom: 2px solid #686666;
+  font-weight: bold !important;
+  font-family: 'Molengo', sans-serif !important;
+  //font-size: 2.5em;
 }
 
-.left-bar {
-  left: 0px;
+h2.book-title{
+  color: rgb(90, 89, 89);
 }
 
-.right-bar {
-  right: 0px;
+#pub-text {
+  font-weight: bold;
+  color: green;
+
+  a {
+    color: green !important;
+    text-decoration: underline;
+  }
+}
+
+.book-left-bar {
+  position: relative;
+  top: 35px;
+
+  a {
+    display: block;
+    width: 80%;
+    color: white !important;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 15px auto;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: none;
+  }
+
+  .books-page-cover {
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  .buy-link {
+    background-color: red;
+  }
+
+  .about-link {
+    background-color: blue;
+  }
+
+  .river-links-link {
+    background-color: green;
+  }
+
+  .prints-link {
+    background-color: lightgreen;
+  }
+
+  .share-box {
+    margin: 100px auto 0px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #333333;
+    color: #333333;
+    position: relative;
+
+    p {
+      color: red;
+      text-transform: uppercase;
+    }
+
+    i, div, g:plus {
+      display: inline-block;
+    }
+
+    .fb-share-button, .fb-share-button > a, &:visited, .twitter-share-button, &:visited, .google-link, &:visited {
+      color: #333333 !important;
+      font-weight: thin !important;
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    .fb-share-button > a, &:visited {
+      height: 15px;
+      position: relative;
+      top: -5px;
+      left: -35px;
+    }
+
+    .twitter-share-button, &:visited {
+      position: relative;
+      top: -3px;
+      left: -18px;
+    }
+
+    .google-link {
+      position: relative;
+      top: -4px;
+      left: -10px;
+    }
+  }
+}
+
+.ind-book-content {
+  margin-top: 50px;
+  .book-left-bar {
+    top: 30px;
+  } 
+  .share-box {
+    margin-top: 30px;
+  }
+}
+
+.praise {
+  color: red;
 }
 
 //img gallery
@@ -271,116 +402,6 @@ body {
   margin: 30px auto;
 }
 
-.books-page-content {
-  margin-top: 30px;
-}
-
-.book-title {
-  padding: 10px 0px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid black;
-  font-weight: bold;
-  font-family: Verdana, Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
-}
-
-.book-left-bar {
-
-
-  a {
-    display: block;
-    width: 80%;
-    color: white !important;
-    text-align: center;
-    padding: 10px 5px;
-    margin: 15px auto;
-  }
-
-  img {
-    display: block;
-    margin: 0 auto;
-    padding: none;
-  }
-
-  .books-page-cover {
-    margin-top: -10px;
-    width: 100%;
-  }
-
-  .buy-link {
-    background-color: red;
-  }
-
-  .about-link {
-    background-color: blue;
-  }
-
-  .river-links-link {
-    background-color: green;
-  }
-
-  .prints-link {
-    background-color: lightgreen;
-  }
-
-  .share-box {
-    margin: 30px auto 0px auto;
-    width: 80%;
-    padding: 20px;
-    border: 1px solid black;
-    position: relative;
-
-    p {
-      color: red;
-      text-transform: uppercase;
-    }
-
-    i, div, g:plus {
-      display: inline-block;
-    }
-
-    .fb-share-button, .fb-share-button > a, &:visited, .twitter-share-button, &:visited, .google-link, &:visited {
-      color: black !important;
-      font-weight: thin !important;
-      float: right;
-      margin: 0;
-      padding: 0;
-    }
-
-    .fb-share-button > a, &:visited {
-      height: 15px;
-      position: relative;
-      top: -5px;
-      left: -35px;
-    }
-
-    .twitter-share-button, &:visited {
-      position: relative;
-      top: -3px;
-      left: -18px;
-    }
-
-    .google-link {
-      position: relative;
-      top: -4px;
-      left: -10px;
-    }
-  }
-
-}
-
-.book-title-small {
-  font-size: 2em;
-  border-bottom: 2px solid black;
-  font-weight: bold;
-  font-family: Verdana, Helvetica, Arial, sans-serif;
-}
-
-.praise {
-  color: red;
-}
-
-
 
 //from crispie.css (orig css file)
 
@@ -451,13 +472,6 @@ p.fineprint {
 td.withline {
   border-top: 1px $yellow solid;
   border-left: 1px $yellow solid;
-}
-
-h1 {
-  //font-family: Georgia, Times, "Times New Roman", serif;
-  //font-size: 16px;
-  //text-align: right;
-  //color: #666666;
 }
 
 td.topline {
@@ -572,21 +586,23 @@ li {
 h2 {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #333333;
-  font-size: 1em;
+  //font-size: 1em;
   font-weight: bold;
 }
 
 //media query
-@media (max-width: 650px) {
-  // .share-box .fa {
-  //   display: none;
-  // }
+@media (max-width: 800px) {
   .share-box {
-    display: none;
-    // .fb-share-button, .fb-share-button > a, .twitter-share-button, .google-link {
-    //   position: absolute;
-    //   left: 0;
-    // }
+    // display: none;
+
+    .fa {
+      display:none;
+    }
+    .fb-share-button, .fb-share-button > a, .twitter-share-button, .google-link {
+      position: absolute;
+      right: 0;
+      font-size: 10px;
+    }
   }
 }
 @media (max-width: 700px) {

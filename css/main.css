@@ -56,6 +56,19 @@ body {
   margin-top: 50px;
   color: gray; }
 
+.bar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  background-color: #362f2d; }
+
+.left-bar {
+  left: 0px; }
+
+.right-bar {
+  right: 0px; }
+
 .decorative-top-bar {
   height: 20px;
   background-color: #362f2d;
@@ -91,8 +104,14 @@ body {
   #art-page-links a {
     line-height: 2em; }
 
+.books-page-content {
+  margin-top: 50px; }
+
 .books-wrapper {
   margin: 100px auto; }
+
+.book-main {
+  margin: 20px 0px; }
 
 .book-link-wrapper {
   display: inline-block;
@@ -103,18 +122,89 @@ body {
     display: block;
     margin: 0px auto; }
 
-.bar {
-  width: 200px;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  background-color: #362f2d; }
+.book-title {
+  padding: 10px 0px;
+  margin: 20px 0px;
+  border-bottom: 2px solid #686666;
+  font-weight: bold !important;
+  font-family: 'Molengo', sans-serif !important; }
 
-.left-bar {
-  left: 0px; }
+h2.book-title {
+  color: #5a5959; }
 
-.right-bar {
-  right: 0px; }
+#pub-text {
+  font-weight: bold;
+  color: green; }
+  #pub-text a {
+    color: green !important;
+    text-decoration: underline; }
+
+.book-left-bar {
+  position: relative;
+  top: 35px; }
+  .book-left-bar a {
+    display: block;
+    width: 80%;
+    color: white !important;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 15px auto; }
+  .book-left-bar img {
+    display: block;
+    margin: 0 auto;
+    padding: none; }
+  .book-left-bar .books-page-cover {
+    margin-top: -10px;
+    width: 100%; }
+  .book-left-bar .buy-link {
+    background-color: red; }
+  .book-left-bar .about-link {
+    background-color: blue; }
+  .book-left-bar .river-links-link {
+    background-color: green; }
+  .book-left-bar .prints-link {
+    background-color: lightgreen; }
+  .book-left-bar .share-box {
+    margin: 100px auto 0px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #333333;
+    color: #333333;
+    position: relative; }
+    .book-left-bar .share-box p {
+      color: red;
+      text-transform: uppercase; }
+    .book-left-bar .share-box i, .book-left-bar .share-box div, .book-left-bar .share-box g:plus {
+      display: inline-block; }
+    .book-left-bar .share-box .fb-share-button, .book-left-bar .share-box .fb-share-button > a, .book-left-bar .share-box:visited, .book-left-bar .share-box .twitter-share-button, .book-left-bar .share-box:visited, .book-left-bar .share-box .google-link, .book-left-bar .share-box:visited {
+      color: #333333 !important;
+      font-weight: thin !important;
+      float: right;
+      margin: 0;
+      padding: 0; }
+    .book-left-bar .share-box .fb-share-button > a, .book-left-bar .share-box:visited {
+      height: 15px;
+      position: relative;
+      top: -5px;
+      left: -35px; }
+    .book-left-bar .share-box .twitter-share-button, .book-left-bar .share-box:visited {
+      position: relative;
+      top: -3px;
+      left: -18px; }
+    .book-left-bar .share-box .google-link {
+      position: relative;
+      top: -4px;
+      left: -10px; }
+
+.ind-book-content {
+  margin-top: 50px; }
+  .ind-book-content .book-left-bar {
+    top: 30px; }
+  .ind-book-content .share-box {
+    margin-top: 30px; }
+
+.praise {
+  color: red; }
 
 .gallery-header {
   text-align: center;
@@ -201,79 +291,6 @@ body {
 
 .about-page-section {
   margin: 30px auto; }
-
-.books-page-content {
-  margin-top: 30px; }
-
-.book-title {
-  padding: 10px 0px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid black;
-  font-weight: bold;
-  font-family: Verdana, Helvetica, Arial, sans-serif;
-  font-size: 2.5em; }
-
-.book-left-bar a {
-  display: block;
-  width: 80%;
-  color: white !important;
-  text-align: center;
-  padding: 10px 5px;
-  margin: 15px auto; }
-.book-left-bar img {
-  display: block;
-  margin: 0 auto;
-  padding: none; }
-.book-left-bar .books-page-cover {
-  margin-top: -10px;
-  width: 100%; }
-.book-left-bar .buy-link {
-  background-color: red; }
-.book-left-bar .about-link {
-  background-color: blue; }
-.book-left-bar .river-links-link {
-  background-color: green; }
-.book-left-bar .prints-link {
-  background-color: lightgreen; }
-.book-left-bar .share-box {
-  margin: 30px auto 0px auto;
-  width: 80%;
-  padding: 20px;
-  border: 1px solid black;
-  position: relative; }
-  .book-left-bar .share-box p {
-    color: red;
-    text-transform: uppercase; }
-  .book-left-bar .share-box i, .book-left-bar .share-box div, .book-left-bar .share-box g:plus {
-    display: inline-block; }
-  .book-left-bar .share-box .fb-share-button, .book-left-bar .share-box .fb-share-button > a, .book-left-bar .share-box:visited, .book-left-bar .share-box .twitter-share-button, .book-left-bar .share-box:visited, .book-left-bar .share-box .google-link, .book-left-bar .share-box:visited {
-    color: black !important;
-    font-weight: thin !important;
-    float: right;
-    margin: 0;
-    padding: 0; }
-  .book-left-bar .share-box .fb-share-button > a, .book-left-bar .share-box:visited {
-    height: 15px;
-    position: relative;
-    top: -5px;
-    left: -35px; }
-  .book-left-bar .share-box .twitter-share-button, .book-left-bar .share-box:visited {
-    position: relative;
-    top: -3px;
-    left: -18px; }
-  .book-left-bar .share-box .google-link {
-    position: relative;
-    top: -4px;
-    left: -10px; }
-
-.book-title-small {
-  font-size: 2em;
-  border-bottom: 2px solid black;
-  font-weight: bold;
-  font-family: Verdana, Helvetica, Arial, sans-serif; }
-
-.praise {
-  color: red; }
 
 p {
   font-family: Verdana, Helvetica, Arial, sans-serif;
@@ -430,12 +447,15 @@ li {
 h2 {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #333333;
-  font-size: 1em;
   font-weight: bold; }
 
-@media (max-width: 650px) {
-  .share-box {
-    display: none; } }
+@media (max-width: 800px) {
+  .share-box .fa {
+    display: none; }
+  .share-box .fb-share-button, .share-box .fb-share-button > a, .share-box .twitter-share-button, .share-box .google-link {
+    position: absolute;
+    right: 0;
+    font-size: 10px; } }
 @media (max-width: 700px) {
   .nav-link {
     font-size: 0.55em; }
