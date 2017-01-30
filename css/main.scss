@@ -172,10 +172,6 @@ body {
   //font-size: 2.5em;
 }
 
-h2.book-title{
-  color: rgb(90, 89, 89);
-}
-
 #pub-text {
   font-weight: bold;
   color: green;
@@ -209,81 +205,77 @@ h2.book-title{
     margin-top: -10px;
     width: 100%;
   }
+}
 
-  .buy-link {
-    background-color: red;
+.share-box {
+  margin: 100px auto 0px auto;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #333333;
+  color: #333333;
+  position: relative;
+
+  p {
+    color: red;
+    text-transform: uppercase;
   }
 
-  .about-link {
-    background-color: blue;
+  i, div, g:plus {
+    display: inline-block;
   }
 
-  .river-links-link {
-    background-color: green;
+  .fb-share-button, .fb-share-button > a, &:visited, .twitter-share-button, &:visited, .google-link, &:visited {
+    color: #333333 !important;
+    font-weight: thin !important;
+    float: right;
+    margin: 0;
+    padding: 0;
   }
 
-  .prints-link {
-    background-color: lightgreen;
-  }
-
-  .share-box {
-    margin: 100px auto 0px auto;
-    width: 80%;
-    padding: 20px;
-    border: 1px solid #333333;
-    color: #333333;
+  .fb-share-button > a, &:visited {
+    height: 15px;
     position: relative;
+    top: -5px;
+    left: -35px;
+  }
 
-    p {
-      color: red;
-      text-transform: uppercase;
-    }
+  .twitter-share-button, &:visited {
+    position: relative;
+    top: -3px;
+    left: -18px;
+  }
 
-    i, div, g:plus {
-      display: inline-block;
-    }
-
-    .fb-share-button, .fb-share-button > a, &:visited, .twitter-share-button, &:visited, .google-link, &:visited {
-      color: #333333 !important;
-      font-weight: thin !important;
-      float: right;
-      margin: 0;
-      padding: 0;
-    }
-
-    .fb-share-button > a, &:visited {
-      height: 15px;
-      position: relative;
-      top: -5px;
-      left: -35px;
-    }
-
-    .twitter-share-button, &:visited {
-      position: relative;
-      top: -3px;
-      left: -18px;
-    }
-
-    .google-link {
-      position: relative;
-      top: -4px;
-      left: -10px;
-    }
+  .google-link {
+    position: relative;
+    top: -4px;
+    left: -10px;
   }
 }
 
 .ind-book-content {
-  margin-top: 50px;
+  margin: 50px 20px 0px 20px;
   .book-left-bar {
     top: 30px;
   } 
   .share-box {
     margin-top: 30px;
   }
+  .book-title{
+    color: rgb(90, 89, 89);
+  }
+  .praise {
+    color: red;
+  }
 }
 
-.praise {
-  color: red;
+.share-bottom {
+  color: rgb(90, 89, 89);
+  display: none;
+}
+
+.hidden-button {
+  margin-bottom: 20px;
+  display: none;
 }
 
 //img gallery
@@ -591,17 +583,14 @@ h2 {
 }
 
 //media query
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .share-box {
-    // display: none;
-
     .fa {
       display:none;
     }
     .fb-share-button, .fb-share-button > a, .twitter-share-button, .google-link {
-      position: absolute;
-      right: 0;
-      font-size: 10px;
+      text-align: center;
+      font-size: 15px;
     }
   }
 }
@@ -611,5 +600,19 @@ h2 {
   }
   #art-page-links {
     font-size: 0.7em;
+  }
+  .book-title {
+    text-transform: uppercase;
+  }
+  .share-box{
+    display: none;
+  }
+  .share-bottom{
+    display: block;
+  }
+}
+@media (max-width: 600px){
+  .hidden-button{
+    display: block;
   }
 }

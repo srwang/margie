@@ -129,9 +129,6 @@ body {
   font-weight: bold !important;
   font-family: 'Molengo', sans-serif !important; }
 
-h2.book-title {
-  color: #5a5959; }
-
 #pub-text {
   font-weight: bold;
   color: green; }
@@ -156,55 +153,57 @@ h2.book-title {
   .book-left-bar .books-page-cover {
     margin-top: -10px;
     width: 100%; }
-  .book-left-bar .buy-link {
-    background-color: red; }
-  .book-left-bar .about-link {
-    background-color: blue; }
-  .book-left-bar .river-links-link {
-    background-color: green; }
-  .book-left-bar .prints-link {
-    background-color: lightgreen; }
-  .book-left-bar .share-box {
-    margin: 100px auto 0px auto;
-    width: 80%;
-    padding: 20px;
-    border: 1px solid #333333;
-    color: #333333;
-    position: relative; }
-    .book-left-bar .share-box p {
-      color: red;
-      text-transform: uppercase; }
-    .book-left-bar .share-box i, .book-left-bar .share-box div, .book-left-bar .share-box g:plus {
-      display: inline-block; }
-    .book-left-bar .share-box .fb-share-button, .book-left-bar .share-box .fb-share-button > a, .book-left-bar .share-box:visited, .book-left-bar .share-box .twitter-share-button, .book-left-bar .share-box:visited, .book-left-bar .share-box .google-link, .book-left-bar .share-box:visited {
-      color: #333333 !important;
-      font-weight: thin !important;
-      float: right;
-      margin: 0;
-      padding: 0; }
-    .book-left-bar .share-box .fb-share-button > a, .book-left-bar .share-box:visited {
-      height: 15px;
-      position: relative;
-      top: -5px;
-      left: -35px; }
-    .book-left-bar .share-box .twitter-share-button, .book-left-bar .share-box:visited {
-      position: relative;
-      top: -3px;
-      left: -18px; }
-    .book-left-bar .share-box .google-link {
-      position: relative;
-      top: -4px;
-      left: -10px; }
+
+.share-box {
+  margin: 100px auto 0px auto;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #333333;
+  color: #333333;
+  position: relative; }
+  .share-box p {
+    color: red;
+    text-transform: uppercase; }
+  .share-box i, .share-box div, .share-box g:plus {
+    display: inline-block; }
+  .share-box .fb-share-button, .share-box .fb-share-button > a, .share-box:visited, .share-box .twitter-share-button, .share-box:visited, .share-box .google-link, .share-box:visited {
+    color: #333333 !important;
+    font-weight: thin !important;
+    float: right;
+    margin: 0;
+    padding: 0; }
+  .share-box .fb-share-button > a, .share-box:visited {
+    height: 15px;
+    position: relative;
+    top: -5px;
+    left: -35px; }
+  .share-box .twitter-share-button, .share-box:visited {
+    position: relative;
+    top: -3px;
+    left: -18px; }
+  .share-box .google-link {
+    position: relative;
+    top: -4px;
+    left: -10px; }
 
 .ind-book-content {
-  margin-top: 50px; }
+  margin: 50px 20px 0px 20px; }
   .ind-book-content .book-left-bar {
     top: 30px; }
   .ind-book-content .share-box {
     margin-top: 30px; }
+  .ind-book-content .book-title {
+    color: #5a5959; }
+  .ind-book-content .praise {
+    color: red; }
 
-.praise {
-  color: red; }
+.share-bottom {
+  color: #5a5959;
+  display: none; }
+
+.hidden-button {
+  margin-bottom: 20px;
+  display: none; }
 
 .gallery-header {
   text-align: center;
@@ -449,18 +448,29 @@ h2 {
   color: #333333;
   font-weight: bold; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .share-box .fa {
     display: none; }
   .share-box .fb-share-button, .share-box .fb-share-button > a, .share-box .twitter-share-button, .share-box .google-link {
-    position: absolute;
-    right: 0;
-    font-size: 10px; } }
+    text-align: center;
+    font-size: 15px; } }
 @media (max-width: 700px) {
   .nav-link {
     font-size: 0.55em; }
 
   #art-page-links {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+
+  .book-title {
+    text-transform: uppercase; }
+
+  .share-box {
+    display: none; }
+
+  .share-bottom {
+    display: block; } }
+@media (max-width: 600px) {
+  .hidden-button {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */
