@@ -365,7 +365,6 @@ body {
 #about-info {
   margin-top: 60px;
 
-
   img {
     max-height: 300px;
     object-fit: contain;
@@ -391,7 +390,17 @@ body {
 }
 
 .about-page-section {
-  margin: 30px auto;
+  margin: 20px auto;
+}
+
+.section-title {
+  font-family: 'Molengo', sans-serif !important;
+  color: rgb(90, 89, 89);
+}
+//river links page
+
+.river-links-wrapper {
+  margin: 50px 10%;
 }
 
 
