@@ -4,6 +4,8 @@ $beige : rgb(238, 233, 211);
 $yellow: rgb(171, 159, 21);
 $cyan: rgb(0, 175, 236);
 
+$title-font: Verdana, Arial, sans-serif;
+
 * {
   box-sizing: border-box;
 }
@@ -168,8 +170,12 @@ body {
   margin: 20px 0px;
   border-bottom: 2px solid #686666;
   font-weight: bold !important;
-  font-family: 'Molengo', sans-serif !important;
+  font-family: $title-font;
   //font-size: 2.5em;
+}
+
+h2.book-title {
+  font-size: 2.2em;
 }
 
 #pub-text {
@@ -273,10 +279,59 @@ body {
   display: none;
 }
 
-.hidden-button {
-  margin-bottom: 20px;
+.hidden {
+  margin-bottom: 25px;
   display: none;
 }
+
+//merchandise page
+.merch-wrapper {
+  margin-top: 75px;
+  .merch-item {
+    display: table-cell;
+    margin: 15px 0px;
+    word-wrap: break-word;
+    .merch-thumb img {
+      display: block;
+      text-align: center;
+      max-height: 150px; 
+      width: auto;
+      margin: 10px 5px;
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+
+    form {
+      font-size: 0.85em;
+    }
+
+    select {
+      font-size: 0.95em;
+      max-width: 80%;
+    }
+
+    form, select {
+      font-family: Verdana, Helvetica, Arial, sans-serif;
+    }
+
+    input {
+      max-width: 70%;
+      max-height: 30px; 
+      text-align: center;
+      margin: 4px 0px;
+    }  
+
+    span {
+      text-decoration: underline;
+    }
+  }
+  .view-cart {
+    padding-top: 50px;
+  }
+}
+
 
 //img gallery
 
@@ -386,7 +441,7 @@ body {
 }
 
 #news {
-  text-align: center;
+  //text-align: center;
 }
 
 .about-page-section {
@@ -394,8 +449,10 @@ body {
 }
 
 .section-title {
-  font-family: 'Molengo', sans-serif !important;
+  font-family: $title-font;
+  font-style: bold;
   color: rgb(90, 89, 89);
+  font-weight: bold !important;
 }
 //river links page
 
@@ -621,7 +678,8 @@ h2 {
   }
 }
 @media (max-width: 600px){
-  .hidden-button{
+  .hidden{
     display: block;
+    text-align: center;
   }
 }

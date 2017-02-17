@@ -127,7 +127,10 @@ body {
   margin: 20px 0px;
   border-bottom: 2px solid #686666;
   font-weight: bold !important;
-  font-family: 'Molengo', sans-serif !important; }
+  font-family: Verdana, Arial, sans-serif; }
+
+h2.book-title {
+  font-size: 2.2em; }
 
 #pub-text {
   font-weight: bold;
@@ -201,9 +204,40 @@ body {
   color: #5a5959;
   display: none; }
 
-.hidden-button {
-  margin-bottom: 20px;
+.hidden {
+  margin-bottom: 25px;
   display: none; }
+
+.merch-wrapper {
+  margin-top: 75px; }
+  .merch-wrapper .merch-item {
+    display: table-cell;
+    margin: 15px 0px;
+    word-wrap: break-word; }
+    .merch-wrapper .merch-item .merch-thumb img {
+      display: block;
+      text-align: center;
+      max-height: 150px;
+      width: auto;
+      margin: 10px 5px; }
+    .merch-wrapper .merch-item p {
+      font-size: 0.8em; }
+    .merch-wrapper .merch-item form {
+      font-size: 0.85em; }
+    .merch-wrapper .merch-item select {
+      font-size: 0.95em;
+      max-width: 80%; }
+    .merch-wrapper .merch-item form, .merch-wrapper .merch-item select {
+      font-family: Verdana, Helvetica, Arial, sans-serif; }
+    .merch-wrapper .merch-item input {
+      max-width: 70%;
+      max-height: 30px;
+      text-align: center;
+      margin: 4px 0px; }
+    .merch-wrapper .merch-item span {
+      text-decoration: underline; }
+  .merch-wrapper .view-cart {
+    padding-top: 50px; }
 
 .gallery-header {
   text-align: center;
@@ -285,15 +319,14 @@ body {
   clear: both;
   margin-top: 15px; }
 
-#news {
-  text-align: center; }
-
 .about-page-section {
   margin: 20px auto; }
 
 .section-title {
-  font-family: 'Molengo', sans-serif !important;
-  color: #5a5959; }
+  font-family: Verdana, Arial, sans-serif;
+  font-style: bold;
+  color: #5a5959;
+  font-weight: bold !important; }
 
 .river-links-wrapper {
   margin: 50px 10%; }
@@ -477,7 +510,8 @@ h2 {
   .share-bottom {
     display: block; } }
 @media (max-width: 600px) {
-  .hidden-button {
-    display: block; } }
+  .hidden {
+    display: block;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
