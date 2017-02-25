@@ -142,36 +142,80 @@ body {
 //books pages
 
 .books-page-content {
-  margin-top: 50px;
+  margin-top: 75px;
+
+  .row {
+    margin-bottom: 40px;
+    position: relative;
+
+    h5 {
+      font-size: 20px;
+    }
+
+    // img {
+    //   display: block;
+    //   margin: 0 auto;
+    // }
+
+    .book-page-buttons {
+      margin: 5px 0px;
+    }
+
+    .center-button {
+      display: block;
+      text-align: center;
+    }
+
+    .right-button {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  .right-panel {
+    .buy-button {
+      color: white;
+      background-color: green;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 0.8em;
+      padding: 5px 12px;
+    }
+  }
 }
 
-.books-wrapper {
-  margin: 100px auto;
-}
+// .books-wrapper {
+//   margin: 100px auto;
+// }
 
 .book-main {
   margin: 20px 0px;
 }
 
-.book-link-wrapper {
-  display: inline-block;
-  margin-bottom: 30px;
-  font-size: 0.8em;
-  position: relative;
 
-  img {
-    display: block;
-    margin: 0px auto;
-  }
-}
+
+// .book-link-wrapper {
+//   display: inline-block;
+//   margin-bottom: 30px;
+//   font-size: 0.8em;
+//   position: relative;
+
+//   img {
+//     display: block;
+//     margin: 0px auto;
+//   }
+// }
 
 .book-title {
   padding: 10px 0px;
-  margin: 20px 0px;
-  border-bottom: 2px solid #686666;
   font-weight: bold !important;
   font-family: $title-font;
   //font-size: 2.5em;
+}
+
+.underline {
+  margin: 20px 0px;
+  border-bottom: 2px solid #686666;
 }
 
 h2.book-title {
@@ -675,6 +719,9 @@ h2 {
   }
   .share-bottom{
     display: block;
+  }
+  .books-page-content .row .right-button, .books-page-content .row .center-button {
+    text-align: left;
   }
 }
 @media (max-width: 600px){

@@ -105,29 +105,39 @@ body {
     line-height: 2em; }
 
 .books-page-content {
-  margin-top: 50px; }
-
-.books-wrapper {
-  margin: 100px auto; }
+  margin-top: 75px; }
+  .books-page-content .row {
+    margin-bottom: 40px;
+    position: relative; }
+    .books-page-content .row h5 {
+      font-size: 20px; }
+    .books-page-content .row .book-page-buttons {
+      margin: 5px 0px; }
+    .books-page-content .row .center-button {
+      display: block;
+      text-align: center; }
+    .books-page-content .row .right-button {
+      display: block;
+      text-align: right; }
+  .books-page-content .right-panel .buy-button {
+    color: white;
+    background-color: green;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 5px 12px; }
 
 .book-main {
   margin: 20px 0px; }
 
-.book-link-wrapper {
-  display: inline-block;
-  margin-bottom: 30px;
-  font-size: 0.8em;
-  position: relative; }
-  .book-link-wrapper img {
-    display: block;
-    margin: 0px auto; }
-
 .book-title {
   padding: 10px 0px;
-  margin: 20px 0px;
-  border-bottom: 2px solid #686666;
   font-weight: bold !important;
   font-family: Verdana, Arial, sans-serif; }
+
+.underline {
+  margin: 20px 0px;
+  border-bottom: 2px solid #686666; }
 
 h2.book-title {
   font-size: 2.2em; }
@@ -508,7 +518,10 @@ h2 {
     display: none; }
 
   .share-bottom {
-    display: block; } }
+    display: block; }
+
+  .books-page-content .row .right-button, .books-page-content .row .center-button {
+    text-align: left; } }
 @media (max-width: 600px) {
   .hidden {
     display: block;
