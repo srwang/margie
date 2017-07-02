@@ -329,8 +329,9 @@ h2.book-title {
     }
 
     select {
-      font-size: 0.95em;
-      max-width: 80%;
+      font-size: 0.90em;
+      max-width: 90%;
+      text-overflow: ellipsis;
     }
 
     form, select {
@@ -348,8 +349,9 @@ h2.book-title {
       text-decoration: underline;
     }
   }
-  .view-cart {
-    padding-top: 50px;
+  hr {
+    margin: 30px 15px;
+    color: gray !important;
   }
 }
 
@@ -481,6 +483,25 @@ h2.book-title {
   margin: 50px 10%;
 }
 
+//checkout page
+#checkout {
+  padding-top: 20px;
+  p {
+    font-style: italic;
+  }
+  #artist-links {
+    margin-top: 20px;  
+    .artist-link {
+      margin-top: 10px;
+      text-align: center;
+      display: block;
+    }
+    img {
+      max-height: 338px;
+      width: auto;
+    }
+  }
+}
 
 //from crispie.css (orig css file)
 
