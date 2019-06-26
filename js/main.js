@@ -59,9 +59,19 @@ $(document).ready(function(){
                     {src:'Rice Bowl copy', caption:['Rice Bowl', 'Hand colored Linocut', '5 13/16&quot x 25 7/8&quot']},
                     {src:'Wingbeats', caption:['Wingbeats', 'Hand colored Linocut collage on gilded paper', '26&quot x 8 1/2&quot']}];
 
-    var paintingGal = [{src: '01_Aigrette', caption: ['Aigrette', 'Acrylic on panel', '16&quot x 20&quot']},
-                        {src: '02_BlueGrosbeck_Flame', caption: ['Blue Grosbeck & Flame Sumac', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot']},
-                        {src: '03_InVinoVeritas', caption:['In Vino Veritas', 'Acrylic and 24k gold leaf on paper mounted to panel', '30&quot x 22&quot']},
+
+    var paintingGal = [
+    {src: 'RuisdaelHen', caption: ['Ruisdael Hen', 'Pigments, acrylic emulsion and 24k gold on panel', '14&quot x 11&quot']},
+    {src: 'RuisdaelRooster', caption: ['Ruisdael Rooster', 'Pigments, acrylic emulsion and 24k gold on panel', '14&quot x 11&quot']},
+    {src: 'Wrens_Red_Roses', caption: ['Wrens and Red Roses', 'Acrylic and 24k gold on panel', '30&quot x 18&quot']},
+    {src: 'Glad_Mad', caption: ['Gladiolus and Carolina Chickadees', 'Acrylic and 24k gold on panel', '30&quot x 18&quot']},
+    {src: 'PricklyPoppyGnatcatcher', caption: ['Rose Prickly Poppy and Blue-gray Gnatcatchers', 'Acrylic and 24k gold on panel', '30&quot x 18&quot']},
+    {src: 'Rubys_Red_Yucca', caption: ['Red Yucca and Ruby-throated Hummingbirds', 'Acrylic and 24k gold on panel', '30&quot x 18&quot']},
+    {src: 'Maguey_Liso', caption: ['Maguey Liso', 'Acrylic dry brush on cotton canvas', '61&quot x 77.75&quot'], sold: true},
+    {src: 'RiverUsurper', caption: ['River Usurper: Arundo donax', 'Acrylic dry brush on cotton canvas', '91&quot x 84&quot'], sold: true},
+    {src: '01_Aigrette', caption: ['Aigrette', 'Acrylic on panel', '16&quot x 20&quot'], sold: true},
+                        {src: '02_BlueGrosbeck_Flame', caption: ['Blue Grosbeck & Flame Sumac', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot'], sold: true},
+                        {src: '03_InVinoVeritas', caption:['In Vino Veritas', 'Acrylic and 24k gold leaf on paper mounted to panel', '30&quot x 22&quot'], sold: true},
                         {src: '04_IndigoBuntingBeautyBerry', caption:['Indigo Bunting and Beauty Berry', 'Egg Tempera with 24k gold leaf on panel', '14&quot x 11&quot']},
                         {src: '06_BrownLeghornHen', caption:['Brown Leghorn Hen', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot'], sold: true},
                         {src: '07_BrownLeghornRooster300 copy', caption: ['Brown Leghorn Rooster', 'Egg Tempera with 24k gold leaf on panel', '11&quot x 14&quot'], sold: true},
@@ -102,7 +112,7 @@ $(document).ready(function(){
                 //create lightbox thumbnail
                 var figure = $('<a  class="img-caption-bundle small-12 medium-3 large-2 columns" href="' + link.src + '.jpg" data-lightbox="' + pageId + '" data-title="' + caption + '"></a>');
 
-                figure.append('<img src="' + link.src + '.jpg">');
+                figure.append('<img src="' + link.src + '.jpg?v=2">');
 
                 if (link.sold) {
                     figure.append('<div class="red-dot"></div><p class="img-caption">' + link.caption[0] + '</p>');
