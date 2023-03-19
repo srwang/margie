@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Arial, sans-serif;
+	background-color: #F7F4E3;
+	color: #333;
+	margin: 0px;
+}
+a:link {
+	color: #4E786F;
+	text-decoration: none;
+}
+a:visited {
+	color: #4E786F;
+}
+a:hover {
+	color: #76AB6D;
+}
+.main {
+	text-align: center;
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+
+.heading {
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.navbox {
+	font-variant: small-caps;
+	text-align: center;
+	width: 1000px;
+	background-color: #3C5854;
+	background-image: url(images/bkg-gradient.jpg);
+	color: #FFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.navbox a:link {
+	color: #FFF;
+	text-decoration: none;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.navbox a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+.navbox a:hover {
+	color: #CCC;
+	text-decoration: none;
+}
+.navbox a:active {
+	color: #CCC;
+	text-decoration: none;
+}
+.table-order {
+	text-align: center;
+	width: 700px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.artcell {
+	font-size: small;
+	text-align: center;
+	vertical-align: bottom;
+	width: 250px;
+	padding-bottom: 40px;
+}
+.content {
+	text-align: left;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.list-galleries {
+	float: left;
+	width: 350px;
+}
+.footer {
+	font-size: x-small;
+	margin-top: 120px;
+	margin-right: auto;
+	margin-left: auto;
+}
+li {
+	margin-bottom: 6px;
+}
+.logos {
+	margin-right: 20px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	vertical-align: middle;
+}

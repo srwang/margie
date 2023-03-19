@@ -1,0 +1,10 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^coloradorivertexas\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.coloradorivertexas\.net$
+RewriteRule ^/?$ "http\:\/\/www\.coloradorivertx\.com" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^texascoloradoriver\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.texascoloradoriver\.com$
+RewriteRule ^/?$ "http\:\/\/www\.coloradorivertx\.com" [R=301,L]
+
